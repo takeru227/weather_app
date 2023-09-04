@@ -1,11 +1,17 @@
-<!doctype html>
-<html lang="ja">
-<head>
-    <title>Index</title>
-    <meta charset="utf-8"/>
-</head>
-<body>
-    <h1>Index</h1>
-    <p>This is Flask sample.</p>
-</body>
-</html>
+{% extends "layout.html" %}
+        
+{% block title %}
+トップページ
+{% endblock %}
+
+{% block head %}
+インデックスページです
+{% endblock %}
+
+{% block content %}
+<p>トップページのサンプル</p>
+{% endblock %}
+
+{% block footer %}
+copyright 2021 hogehoge
+{% endblock %}
