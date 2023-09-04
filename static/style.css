@@ -1,0 +1,23 @@
+body{
+    margin: 10px;
+    background-color: whitesmoke;
+}
+
+h1{
+    color: blue;
+    font-size:34pt;
+}
+
+p{
+    font-size:14pt;
+}
+
+pre {
+    background-color: white;
+    font-size: 11pt;
+    padding:12
+}
+
+div.footer{
+    margin: 50px 0px;
+}
