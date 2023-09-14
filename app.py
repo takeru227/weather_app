@@ -14,9 +14,17 @@ def new():
     return render_template("new.html")
 
 
-@app.route("/show")
+@app.route("/show", methods=["GET", "POST"])
 def show():
-    return render_template("show.html")
+    # GETの処理
+    if request.method == "GET":
+        print("get method!")
+        return render_template("show.html")
+    # POSTの処理
+    elif request.method == "POST":
+        print("post method!")
+        text = "hello"
+        return render_template("show.html", text=text)
 
 
 if __name__ == "__main__":
