@@ -18,16 +18,13 @@ def new():
 def show():
     # GETの処理
     if request.method == "GET":
-        print("get method!")
         return render_template("show.html")
     # POSTの処理
     elif request.method == "POST":
-        print("post method!")
-        text = "hello"
-        return render_template("show.html", text=text)
+        data = request.form["text field"]
+        print(data)
+        return render_template("show.html", text=data)
 
 
 if __name__ == "__main__":
     app.run(debug=True)
-
-data = request.form["text field"]
