@@ -1,0 +1,8 @@
+p {
+    color: blue;  /*文字色を青に設定*/
+   }
+   
+   .box {
+    background-color: pink;  /*背景色をピンク色に設定*/
+    height: 100px;  /*箱の高さを100pxに設定*/
+   }
