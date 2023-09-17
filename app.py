@@ -23,7 +23,7 @@ def show():
     elif request.method == "POST":
         data = request.form["text field"]
         print(data)
-        return render_template("show.html", text=text)
+        return render_template("show.html", text=data)
 
 
 if __name__ == "__main__":
