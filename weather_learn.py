@@ -2,7 +2,7 @@ import numpy as np
 from sklearn import svm
 
 # csvファイルの読み込み
-npArray = np.loadtxt("data.csv", delimiter=",", dtype="float")
+npArray = np.loadtxt("data_fuk.csv", delimiter=",", dtype="float")
 
 # 説明変数の格納
 x = npArray[:, 0:4]
