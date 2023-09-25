@@ -2,7 +2,7 @@ import numpy as np
 from sklearn import svm
 
 # csvファイルの読み込み
-npArray = np.loadtxt("data_fuk.csv", delimiter=",", dtype="float")
+npArray = np.loadtxt("data_fuk.csv", delimiter=",", dtype="float", encoding="utf-8")
 
 # 説明変数の格納
 x = npArray[:, 0:4]
@@ -22,9 +22,9 @@ weather = [[9, 0, 7.9, 6.5]]
 # predict関数で、評価データの天気を予測
 ans = model.predict(weather)
 
-if ans == 0:
+if ans >= 0:
     print("晴れです")
-if ans == 1:
+elif ans > 2:
     print("曇りです")
-if ans == 2:
+elif ans > 8:
     print("雨です")
