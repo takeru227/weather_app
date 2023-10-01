@@ -24,7 +24,7 @@ y = df["平均雲量"]
 # データを訓練データとテストデータに分割
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=0)
 
-# モデルの選択と訓練（線形回帰モデルを使用）
+# モデルの選択と訓練（ランダムフォレスト回帰モデルに変更）
 model = RandomForestRegressor()
 model.fit(X_train, y_train)
 
