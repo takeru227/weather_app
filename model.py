@@ -29,12 +29,12 @@ model = RandomForestRegressor()
 model.fit(X_train, y_train)
 
 # 学習モデルの保存
-with open("linear_regression_model.pkl", "wb") as file:
+with open("linear_regression_model.pkl", mode="wb") as file:
     pickle.dump(model, file)
 
 # モデルのオープン
-with open("model.pickle", mode="rb") as f:
-    clf = pickle.load(f)
+with open("linear_regression_model.pkl", mode="rb") as file:
+    model = pickle.load(file)
 
 # 新しいデータの作成
 new_data = pd.DataFrame({"平均気温": [23], "降水量": [5], "日照時間": [9], "平均湿度": [45]})

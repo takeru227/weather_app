@@ -44,5 +44,5 @@ else:
     print("曇り")
 
 # モデルの保存
-with open("linear_regression_model.pkl", "wb") as file:
+with open("linear_regression_model.pkl", mode="wb") as file:
     pickle.dump(model, file)
