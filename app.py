@@ -1,5 +1,6 @@
 from flask import Flask, render_template
 from flask import request
+from model import RandomForestRegressor
 
 app = Flask(__name__)
 

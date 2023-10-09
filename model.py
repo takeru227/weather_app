@@ -41,6 +41,13 @@ new_data = pd.DataFrame({"平均気温": [23], "降水量": [5], "日照時間":
 
 # 新しいデータに対する予測
 predicted_cloud_cover = model.predict(new_data)[0]
+
+
+def predict(new_data):
+    predicted_cloud_cover = model.predict(new_data)[0]
+    return predicted_cloud_cover
+
+
 print(f"Predicted Average Cloud Cover for New Data: {predicted_cloud_cover}")
 
 # カテゴリ出力の処理
