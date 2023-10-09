@@ -17,41 +17,16 @@ nav {
   margin-right: 5%;
 }
 
-*/*   First block   */
+
+/*   first block   */
 .first-block {
-  background-image: url("../images/天気予報イラスト.jpg");
-  background-size: cover;
-  width: 100%;
-  height: 900px;
-
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-}
-
-.title-container {
-  text-align: center;
-}
-
-h1 {
-  font-size: 80px;
-  font-family: serif;
-  color: #444;
-}
-
-h3 {
-  font-size: 50px;
-  font-family: serif;
-  color: #444;
-}
-/*   First block End   */
-
-/*   Second block   */
-.second-block {
   background-color: #f0f0f0;
   text-align: center;
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  font-size: 30px;
+  font-family:sans-serif;
+  color:#DBA901;
 }
 
 .about-container {
@@ -80,14 +55,14 @@ h3 {
 .font-small {
   font-size: 15px;
 }
-/*   Second block End   */
+/*   first block End   */
 
-/*   Third block Start   */
-.third-block {
-  background-color: #f05f40;
+/*   second block Start   */
+.second-block {
+  background-color: #E0F8E0;
   text-align: center;
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .event-container {
@@ -129,4 +104,35 @@ span {
   width: 40%;
   height: 330px;
 }
-/*   Third block End   */
+/*   second block End   */
+
+
+*/*   third block   */
+.third-block {
+  background-image: url("../images/天気予報イラスト.jpg");
+  background-size: cover;
+  width: 100%;
+  height: 900px;
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  
+}
+
+.title-container {
+  text-align: center;
+}
+
+h1 {
+  font-size: 80px;
+  font-family: serif;
+  color: #444;
+}
+
+h3 {
+  font-size: 50px;
+  font-family: serif;
+  color: #444;
+}
+/*   third block End   */
