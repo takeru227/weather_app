@@ -1,6 +1,6 @@
 from flask import Flask, render_template
 from flask import request
-from model import RandomForestRegressor
+from model import predict
 
 app = Flask(__name__)
 
