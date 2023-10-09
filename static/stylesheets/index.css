@@ -1,4 +1,5 @@
 .header-nav {
+  font-size: 60px;
   background-color: #CEF6F5;
   color: #2E2EFE;
   /*position: fixed;*/
@@ -9,6 +10,7 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  
 }
 
 nav {
@@ -17,14 +19,14 @@ nav {
 
 */*   First block   */
 .first-block {
-  background-image: url("../images/first-back.jpg");
+  background-image: url("../images/天気予報イラスト.jpg");
   background-size: cover;
   width: 100%;
-  height: 550px;
+  height: 900px;
 
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .title-container {
