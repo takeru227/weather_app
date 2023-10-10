@@ -4,7 +4,7 @@
 <head>
     <title>show</title>
     <meta charset="utf-8" />
-     <link rel="stylesheet" href="../static/stylesheets/new.css">
+     <link rel="stylesheet" href="../static/stylesheets/show.css">
 </head>
 
 <body>
@@ -17,9 +17,14 @@
      
    <!--  コンテンツを一旦仮置きする  -->
      <div class="first-block">
-       <p>オリジナル天気予測ページへようこそ～！</p>
+       <p>ここは入力結果のページです。</p>
      </div>
      <div class="second-block">
+       <p>平均雲量は{{result}}、よって天気は？？です。</p>
+    
+       <a href="/">TOPへ戻る</a>
+       
+       <a href="/new">入力ページへ遷移する</a>
      </div>
      <div class="third-block">
      </div>
@@ -27,11 +32,7 @@
    <div class = 'answer'>
     
         
-    <p>{{result}}</p>
     
-    <a href="/">TOPへ戻る</a>
-    <p>this is show page!</p>
-    <a href="/new">newページへ遷移する</a>
     
 </body>
 

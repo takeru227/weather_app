@@ -17,19 +17,14 @@
      
    <!--  コンテンツを一旦仮置きする  -->
      <div class="first-block">
-       <p>オリジナル天気予測ページへようこそ～！</p>
+       <p>ここは入力ページです。平均気温、降水量、日照時間、平均湿度を入力してください。</p>
      </div>
      <div class="second-block">
-     </div>
-     <div class="third-block">
-     </div>
-   <!--  コンテンツはここまで  -->
+       <a href="/">TOPへ戻る</a>
+       
+       <a href="/show"></a>
 
-    <a href="/">TOPへ戻る</a>
-    <p>this is new page!</p>
-    <a href="/show">showページへ遷移する</a>
-
-    <form action="/show" method="POST">
+      <form action="/show" method="POST">
         <p>平均気温</p>
         <input type="text" name="average temperature">
 
@@ -43,8 +38,14 @@
         <input type="text" name="average humidity">
 
         <p></p>
-        <input type="submit" value="送信">
-    </form>
+        <input type="submit" value="入力結果ページへ">
+      </form>
+     </div>
+     <div class="third-block">
+     </div>
+   <!--  コンテンツはここまで  -->
+
+    
 </body>
 
 </html>
