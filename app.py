@@ -39,7 +39,34 @@ def show():
             }
         )
         result = predict(answer)
-        return render_template("show.html", text=data, result=result)
+
+        if result <= 1:
+            message = "快晴"
+        elif 2 <= result <= 8:
+            message = "晴れ"
+        else:
+            message = "曇り"
+
+        if data_int[0] < 5:
+            temperature = "ダウンコートがおすすめ"
+        elif 5 <= data_int[0] < 10:
+            temperature = "冬物コートがおすすめ"
+        elif 10 <= data_int[0] < 15:
+            temperature = "セーターやトレンチコートがおすすめ"
+        elif 15 <= data_int[0] < 20:
+            temperature = "長袖＋カーディガンがおすすめ"
+        elif 20 <= data_int[0] < 25:
+            temperature = "長袖がおすすめ"
+        else:
+            temperature = "半袖がおすすめ"
+
+        return render_template(
+            "show.html",
+            text=data,
+            result=result,
+            message=message,
+            temperature=temperature,
+        )
 
 
 if __name__ == "__main__":
